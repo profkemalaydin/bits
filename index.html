@@ -5,10 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BITS | Business & Industry Technology Solutions</title>
   <meta name="description" content="Franklin University BITS connects students with real-world tech projects for nonprofits, small governments, and small businesses." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="BITS | Business & Industry Technology Solutions" />
+  <meta property="og:description" content="Franklin University BITS connects students with real-world tech projects for nonprofits, small governments, and small businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta property="og:site_name" content="BITS" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="/favicon.ico" />
 </head>
 <body>
-  <header class="top">
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top" role="banner">
     <div class="container">
       <div class="brand">
         <div class="logo">BITS</div>
@@ -18,7 +31,7 @@
         </div>
       </div>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#overview">Overview</a>
         <a href="#partners">For Partners</a>
         <a href="#students">For Students</a>
@@ -29,7 +42,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" role="main">
     <section class="hero">
       <div class="container hero-grid">
         <div>
@@ -181,7 +194,7 @@
         <!-- Replace this link with your Microsoft Form or SharePoint intake link -->
         <div class="card">
           <p><b>Project Intake Form:</b></p>
-          <p><a href="https://example.com" target="_blank" rel="noopener">https://example.com</a></p>
+          <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">https://example.com</a></p>
           <p class="small muted">Tip: Replace the link with your Microsoft Forms intake URL.</p>
         </div>
 
@@ -212,7 +225,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container footer-row">
       <div>© <span id="year"></span> Franklin University • BITS</div>
       <div class="muted">Student-led, faculty-supervised applied learning</div>
